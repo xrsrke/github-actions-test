@@ -1,0 +1,12 @@
+name: integration test
+
+on: [push] 
+
+jobs:
+    test-app:
+        runs-on: ubuntu-latest
+        steps:
+            - name: echo a string
+              run: echo "hello world"
+            - name: check person version
+              run: python3 --version
