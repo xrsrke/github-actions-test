@@ -9,5 +9,5 @@ jobs:
             - name: processor info
               run: |
                 import platform
-                print(platform.processor()
+                print(platform.processor())
               shell: python
