@@ -10,3 +10,7 @@ jobs:
               run: echo "hello world"
             - name: check person version
               run: python3 --version
+            - name: list files
+              run: |
+                pwd
+                ls
