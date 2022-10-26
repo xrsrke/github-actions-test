@@ -1,0 +1,21 @@
+name: actions
+
+on: [push] 
+
+jobs:
+    test-app:
+        runs-on: ubuntu-latest
+        steps:
+            - name: check person version
+              run: python3 --version
+            - name: List Files
+              run: |
+                pwd
+                ls -a
+            - name: Checkout
+              uses: actions/checkout@v
+            - name: List Files
+              run: |
+                pwd
+                ls -a1
+
